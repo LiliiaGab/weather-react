@@ -3,6 +3,7 @@ import WeatherIcon from "./WeatherIcon";
 import Weather from "./Weather";
 import Form from "./Form";
 import Location from "./Location";
+import Forecast from "./Forecast";
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Form />
         <br />
         <Location />
+        <Forecast />
       </div>
       <div className="coder-details">
         <a
