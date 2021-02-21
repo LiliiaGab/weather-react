@@ -25,7 +25,7 @@ function App() {
         >
           Open-source code
         </a>
-        <p4>by Liliia Gabdrakhmanova</p4>
+        <p4> by Liliia Gabdrakhmanova</p4>
       </div>
     </div>
   );
