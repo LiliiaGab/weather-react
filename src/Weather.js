@@ -1,13 +1,27 @@
 import React from "react";
-import axios from "axios";
 
 export default function Weather() {
-    function handleResponse(response) {
-        alert(`the weather in Auckland is ${response.data.main.temp} C`)
-    }
-        let apiKey = "ac2523706a3a3cb29b4282c1c91e736e";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Auckland&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleResponse);
-    return <h2>Hello from Weather</h2>;
+     return (
+    <div className="main-information">
+      <div className="local-city">
+        <span className="temperature" id="temperature">
+          16
+        </span>
+        <span className="measure">
+          <a href="0">°C</a> / <a href="0">°F</a>
+        </span>
+      </div>
+      <h1>
+        <span id="description">Cloudy</span>
+      </h1>
+      <span>
+        <h2 id="feels-like">Feels like: 12°C</h2>
+      </span>
+      <p1>
+        <span id="humidity">Humidity: 72%</span>
+        <br />
+        <span id="wind">Wind: 6.69m/c</span>
+      </p1>
+    </div>
+  );
 }
