@@ -23,9 +23,9 @@ function App() {
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code
+          Open-source code on GitHub
         </a>
-        <p4> by Liliia Gabdrakhmanova</p4>
+        <p4> created by Liliia Gabdrakhmanova</p4>
       </div>
     </div>
   );
