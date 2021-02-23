@@ -11,15 +11,16 @@ export default function Form() {
     axios.get(apiUrl).then(handleResponse);
 
   return (
-    <div className="col-6">
+    <div className="findcity">
       <form id="seacrh-form">
+        <div classname="row">
+        <div className="col-6">
         <input
           type="searchCity"
           id="search-text-input"
           placeholder="Search a city"
           autocomplete="off"
-          autofocus="on"
-        />
+          autofocus="on"/>
         <input type="submit" value="Search" className="btn btn-light" />
         <input
           type="submit"
@@ -27,7 +28,9 @@ export default function Form() {
           id="current"
           className="btn btn-light"
         />
+        </div>
+        </div>
       </form>
-    </div>
+      </div>
   );
 }

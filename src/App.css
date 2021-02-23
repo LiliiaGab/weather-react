@@ -36,7 +36,7 @@ i {
   border-radius: 10px;
   max-width: 450px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 20px;
 }
 .current-weather {
   float: left;
@@ -59,6 +59,9 @@ i {
   font-size: 17px;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   text-align: center;
+}
+.col-6 {
+  padding: 3px;
 }
 .future-temperature {
   font-weight: bolder;
