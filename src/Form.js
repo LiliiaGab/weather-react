@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function Form() {
       function handleResponse(response) {
-        alert (`The weather in Auckland is ${response.data.main.temp}°C`)
+      console.log(response);
     }
         let apiKey = "ac2523706a3a3cb29b4282c1c91e736e";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Auckland&appid=${apiKey}&units=metric`;

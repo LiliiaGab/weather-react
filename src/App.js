@@ -4,19 +4,19 @@ import Weather from "./Weather";
 import Form from "./Form";
 import Location from "./Location";
 import Forecast from "./Forecast";
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-        <div class="container">
+      <div className="container">
         <WeatherIcon />
         <Weather />
         <Form />
         <br />
         <Location />
         <Forecast />
-      </div>
+        </div>
       <div className="coder-details">
         <a
           href="https://github.com/LiliiaGab/weather-react.git"
@@ -26,7 +26,7 @@ function App() {
           Open-source code on GitHub
         </a>
         <p4> created by Liliia Gabdrakhmanova</p4>
-      </div>
+         </div>   
     </div>
   );
 }
