@@ -28,7 +28,8 @@ i {
   cursor: pointer;
   text-decoration: none;
 }
-.container {
+.spreadsheet {
+  border: 1px solid #fff1eb;
   font-family: "Hind Siliguri", sans-serif;
   color: #0278ae;
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
@@ -37,7 +38,6 @@ i {
   margin: 20px auto;
   padding: 10px;
 }
-
 .current-weather {
   float: left;
   position: relative;

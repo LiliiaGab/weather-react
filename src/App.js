@@ -10,12 +10,13 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <div className="spreadsheet">
         <WeatherIcon />
         <Weather />
         <Form />
         <br />
         <Location />
-        <Forecast />
+        <Forecast />  
         </div>
       <div className="coder-details">
         <a
@@ -27,6 +28,7 @@ function App() {
         </a>
         <p4> created by Liliia Gabdrakhmanova</p4>
          </div>   
+         </div>
     </div>
   );
 }
