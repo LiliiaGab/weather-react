@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="spreadsheet">
-        <WeatherIcon />
-        <Weather />
+        <WeatherIcon/>
+        <Weather defaultCity="Auckland" />
         <Form />
         <br />
-        <Location />
+        <Location defaultCity="Auckland" />
         <Forecast />  
         </div>
       <div className="coder-details">
