@@ -1,8 +1,5 @@
 import React from "react";
-import WeatherIcon from "./WeatherIcon";
 import Weather from "./Weather";
-import WeatherInfo from "./WeatherInfo";
-import Location from "./Location";
 import Forecast from "./Forecast";
 import "./App.css";
 
@@ -11,12 +8,8 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="spreadsheet">
-        <WeatherIcon/>
-        <Weather defaultCity="Auckland" />
-        <WeatherInfo defaultCity="Auckland"/>
-        <br />
-        <Location defaultCity="Auckland" />
-        <Forecast />  
+        <Weather defaultCity="Auckland" /> 
+        <Forecast /> 
         </div>
       <div className="coder-details">
         <a
