@@ -15,7 +15,7 @@ function handleResponse(response) {
         city: response.data.name,
         date: new Date (response.data.dt*1000),
         description: response.data.weather[0].main,
-        iconUrl:"https://ssl.gstatic.com/onebox/weather/64/rain_light.png",
+        iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       })
     }
 
@@ -88,7 +88,6 @@ if (weatherData.ready) {
         </div>
       </form> 
       </div>
-      <br />
        <div className="location">
       <span className="current-city" id="current-city">
         <p4>{weatherData.city}</p4>
