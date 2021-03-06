@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -15,7 +16,7 @@ function handleResponse(response) {
         city: response.data.name,
         date: new Date (response.data.dt*1000),
         description: response.data.weather[0].main,
-        iconUrl:`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+        icon: response.data.weather[0].icon,
       })
     }
 
@@ -58,13 +59,11 @@ if (weatherData.ready) {
         <span id="wind">Wind: {weatherData.wind}m/c</span>
       </p1>
     </div>
+
     <div className="current-weather">
-      <img
-        src={weatherData.iconUrl}
-        alt="weather"
-        id="icon"
-      />
+      <WeatherIcon code={weatherData.icon} />
     </div>
+
     <div className="findcity">
       <form onSubmit={handleSubmit}>
         <div classname="row">
