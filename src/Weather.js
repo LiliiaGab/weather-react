@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -40,12 +41,7 @@ if (weatherData.ready) {
    <div>
 <div className="main-information">
       <div className="local-city">
-        <span className="temperature" id="temperature">
-          {Math.round(weatherData.temperature)}
-        </span>
-        <span className="measure">
-          <a href="0">°C</a> / <a href="0">°F</a>
-        </span>
+        <WeatherTemperature celsius = {weatherData.temperature}/>
       </div>
       <h1>
         <span id="description">{weatherData.description}</span>
