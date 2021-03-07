@@ -12,7 +12,7 @@ export default function FormattedDate(props) {
         minutes = `0${minutes}`;
     }
 return (<div>
-{day} {hours}:{minutes}
+{day}, {hours}:{minutes} Local Time
 </div>
 );
 }

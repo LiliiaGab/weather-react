@@ -3,6 +3,7 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -63,7 +64,6 @@ if (weatherData.ready) {
     <div className="findcity">
       <form onSubmit={handleSubmit}>
         <div classname="row">
-        <div className="col-6">
         <input
           type="searchCity"
           id="search-text-input"
@@ -73,18 +73,13 @@ if (weatherData.ready) {
           onChange={handleCityChange}
           />
         <input type="submit" value="Search" className="btn btn-light" />
-        <input
-          type="submit"
-          value="Current"
-          id="current"
-          className="btn btn-light"
-        />
-        </div>
         </div>
       </form> 
       </div>
+      <br />
        <div className="location">
-      <span className="current-city" id="current-city">
+         <div className="location-information">
+      <span className="current-city">
         <p4>{weatherData.city}</p4>
       </span>
       <br />
@@ -92,7 +87,8 @@ if (weatherData.ready) {
         <FormattedDate date={weatherData.date} />
         {weatherData.description}
       </p2>
-      <div className="card-group" id="forecast"></div>
+      </div>
+       <WeatherForecast city={weatherData.city}/> 
     </div>
    </div>
   );
